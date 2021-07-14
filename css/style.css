@@ -6,49 +6,20 @@
 *{
 margin: 0;
 padding: 0;
-/* box-sizing: inherit; */
+
 }
 body { 
   font-family:   'Poppins', sans-serif;
   font-weight: 400;
-  /* box-sizing: border-box; */
+
      
 }
-/* reuseable css */
+
 .container{
     width: 1050px;
 
 }
-.button,
-.button:link,
-.button:visited{font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    background-color: #E02C6D;
-    color: #FFFFFF ;
-    padding: 10px;
-    transition: all 0.3s;
-    
-    display: inline-block;
 
-}
-.button:hover{
-    
-    transform: translateY(-3px);
-    background-color: skyblue;
-}
-.button:hover i{
-    display: inline-block;
-    transform: translateX(4px);
-    transition: all 0.3s;
-    color: royalblue;
-}
-
-.button:focus,
-.button:active{
-    
-    transform: translateY(0px);
-}
 
 /* header */
 .header{
@@ -84,6 +55,34 @@ align-items: center;
 .header-content-image img{
     height: 438px;
     width: 556px;
+}
+.button,.button:link,
+.button:visited{font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF ;
+    padding: 10px;
+    transition: all 0.3s;
+    
+    display: inline-block;
+
+}
+.button:hover{
+    
+    transform: translateY(-3px);
+    background-color: skyblue;
+}
+.button:hover i{
+    display: inline-block;
+    transform: translateX(4px);
+    transition: all 0.3s;
+    color: royalblue;
+}
+
+.button:focus,.button:active{
+    
+    transform: translateY(0px);
 }
 
 /* Main */
@@ -211,3 +210,72 @@ footer p{
 }
 
 
+/*---------- media queries---------- */
+/*-------- mobile devices------- */
+@media only  screen and (max-width: 688px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+   .header-content{
+       flex-direction: column;
+       align-items: center;
+       padding: 40px ;
+       height: 400px;
+       width: 400px;
+
+   }
+   .header-info{
+       margin-bottom: 50px;
+       width: 80%;
+   }
+   .header-info h1{
+       font-size: 36px;
+   }
+   .header-content-image{
+       width: auto;
+   }
+   
+   .header-content-image img{
+       width: 329px;
+       height: 259px;
+   }
+/* All players  */
+.players {
+    display: grid;
+
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    grid-row-gap: 30px;
+    width: 80%;
+    
+}
+.player h3{
+justify-content: center;
+width: 30px;
+
+}
+
+/* Top news */
+.top-news{
+
+    display: grid;
+
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+
+}
+
+footer { flex-direction: column;
+    align-items: center;
+    
+
+}
+
+
+
+
+
+}
